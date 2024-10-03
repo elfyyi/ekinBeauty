@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+header {
+    background-color: #474168;
+    height: 128px;
+    
+}
+
+.firstBar{
+    display: inline;
+}
+.firstBar ul li:first-child > a{
+    color: black;
+    border-bottom: 2px solid black;
+}
+.firstBar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 90px;
+    
+}
+.firstBar ul li{
+    display: inline;
+    font-size: 25px;
+    margin-left: 60px;
+    position: relative;
+    top: 40px;
+}
+.firstBar ul li a{
+    color: #f9c4ac;
+    text-decoration: none;
+}
+.firstBar ul li a:hover{
+    transition: 0.5s linear;
+    border-bottom: 2px solid rgb(0, 0, 0)
+}
+.logo{
+    display: inline;
+}
+.logo img{
+    width: 150px;
+    object-fit: cover;
+    position: relative;
+    left: 40%;
+    bottom: 50px;
+}
+.secondBar{
+    display: inline;
+}
+.secondBar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 90px;
+    position: absolute;
+    left: 50%;
+    bottom: 95%;
+    
+}
+.secondBar ul li{
+    display: inline;
+    font-size: 25px;
+    margin-left: 60px;
+    position: relative;
+    top: 20px;
+}
+.secondBar ul li a{
+    color: #f9c4ac;
+    text-decoration: none;
+}
+.secondBar ul li a:hover{
+    transition: 0.5s linear;
+    border-bottom: 2px solid rgb(0, 0, 0)
+}
+
+.searchBox{
+    display: inline;
+    position: absolute;
+    left: 75%;
+    bottom: 884px;
+}
+.searchBox form i{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.searchBox form input{
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sliderMain{
+    max-width: 100%;
+}
+.sliderWrapper{
+    position: relative;
+    bottom: 14px;
+}
+.slider{
+    display:inline-flex;
+    position: relative;
+}
+.slider img{
+    width: 1958px;
+    height: 600px;
+    position: absolute;
+    z-index: -1;
+}
+.sliderWrapper form input[type="radio"]{
+    position: absolute;
+    left: 50%;
+    top: 580px;
+}
+#mezo{
+    margin-left: 35px;
+}
+#cilt{
+    margin-left: 20px;
+}
+#mezo:checked{
+    background-color: black;
+}
+#mezo:checked ~ .slider #zayiflama,
+#mezo:checked ~ .slider #ciltbakimi {
+    display: none;
+    transition: 2s ease-in;
+}
+#zayif:checked ~ .slider #mezoterapi,
+#zayif:checked ~ .slider #ciltbakimi {
+    display: none;
+    transition: 2s ease-in;
+}
+#cilt:checked ~ .slider #mezoterapi,
+#cilt:checked ~ .slider #zayiflama {
+    display: none;
+    transition: 2s ease-in;
+}
+.service{
+    margin-top: 670px;
+    text-align: center;
+    background-image: url(https://images.freeimages.com/images/premium/previews/2206/22068293-defocused-silver-glittering-background.jpg);
+
+}
+.service h3{
+    font-family:"Dancing Script", cursive;
+    font-size: 45px;
+}
+
+.butonsarıcı-sol{
+    left: -25px; 
+}
+.butonsarıcı-sol,
+.butonsarıcı-sag {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.fa-solid {
+    background-color: rgb(160, 160, 160);
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    opacity: 0.5;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.fa-solid:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.serviceSlider{
+    position: relative;
+    left: 350px;
+    width: 1300px;
+}
+.serviceWrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+    overflow: hidden;
+    width: 1100px;
+}
+.serviceCard{
+    width: 300px;
+    position: relative;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #efefef;
+    opacity: 0.6;
+}
+.serviceCard:hover{
+    opacity: 1;
+}
+.serviceİmg img{
+    width: 300px;
+    height: 200px;
+}
+.serviceCard p:first-child {
+    font-family:"Dancing Script", cursive;
+    font-size: 30px !important;
+    text-align: center;
+}
+.serviceDetails p{
+    text-align: center;
+    font-size: 20px;
+}
+.serviceDetails a{
+    text-decoration: none;
+    color: black;
+}
+.serviceDetails a:hover{
+    background-color: darkgray;
+    border-radius: 5px;
+}
+.owner h3,
+.owner h5{
+    color: white;
+    font-family: "Dancing Script", cursive;
+}
+.owner h3{
+    font-size: 56px;
+    text-align: center;
+    margin-top: 150px;
+}
+.ownerBox{
+    display: flex;
+    width: 1000px;
+    position: relative;
+    left: 450px;
+}
+.ownerİmg img{
+    width: 500px;
+    position: relative;
+    bottom: 80px;
+}
+.ownerDetails p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 200px;
+}
+.ownerDetails h5{
+    font-size: 25px;
+    position: relative;
+    top: 200px;
+    right: 400px;
+}
